@@ -1,23 +1,16 @@
-import React from 'react';
-import styled from "styled-components";
+import { AppContainer, ColumnContainer, ColumnTitle, CardContainer} from "./styles";
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <AppContainer>
+      <ColumnContainer>
+        <ColumnTitle>Todo List:</ColumnTitle>
+        <CardContainer>First Item</CardContainer>
+        <CardContainer>Second Item</CardContainer>
+        <CardContainer>Third Item</CardContainer>
+      </ColumnContainer>
+    </AppContainer>
   );
 }
 
